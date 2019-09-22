@@ -5,7 +5,13 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    components: []
+    components: [
+      {
+        name: 'Carousel',
+        version: '1.0.0',
+        description: 'Carousel components easy to customize.'
+      }
+    ]
   },
   mutations: {
 

@@ -12,6 +12,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/component/carousel',
+      name: 'carousel',
+      component: () => import(/* webpackChunkName: "carousel" */ './views/Carousel.vue')
     }
   ]
 })
